@@ -1,9 +1,15 @@
 package fantasyshark.thaumicscholars;
 
+import fantasyshark.thaumicscholars.Proxy.CommonProxy;
+import fantasyshark.thaumicscholars.common.config.ConfigResearch;
+import fantasyshark.thaumicscholars.common.config.ModConfig;
+import fantasyshark.thaumicscholars.common.crafting.FurnaceRecipeRegistryHandler;
+import fantasyshark.thaumicscholars.common.crafting.InfusionRecipeRegistryHandler;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
@@ -15,6 +21,7 @@ public class ThaumicScholars
     public static final String VERSION = "1.0";
 
     private static Logger logger;
+    public static CommonProxy proxy;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
@@ -23,9 +30,17 @@ public class ThaumicScholars
     }
 
     @EventHandler
-    public void init(FMLInitializationEvent event)
-    {
-        // some example code
-        logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+    public void init(FMLInitializationEvent event) {
+        FurnaceRecipeRegistryHandler.register();
+        InfusionRecipeRegistryHandler.initializeInfusionRecipes();
+        ConfigResearch.init();
+
     }
+
+    @EventHandler
+    public void postinit(FMLPostInitializationEvent event) {
+        ModConfig.postInitMisc();
+
+    }
+
 }

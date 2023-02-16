@@ -1,0 +1,29 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "coal": {
+            "model": "forge:item-layer", "transform": "forge:default-item",
+            "textures": { "layer0": "thaumicscholars:items/cluster_coal" }
+        },
+        "redstone": {
+            "model": "forge:item-layer", "transform": "forge:default-item",
+            "textures": { "layer0": "thaumicscholars:items/cluster_redstone" }
+        },
+        "lapis": {
+            "model": "forge:item-layer", "transform": "forge:default-item",
+            "textures": { "layer0": "thaumicscholars:items/cluster_lapis" }
+        },
+        "amber": {
+            "model": "forge:item-layer", "transform": "forge:default-item",
+            "textures": { "layer0": "thaumicscholars:items/cluster_amber" }
+        },
+        "diamond": {
+            "model": "forge:item-layer", "transform": "forge:default-item",
+            "textures": { "layer0": "thaumicscholars:items/cluster_diamond" }
+        },
+        "emerald": {
+            "model": "forge:item-layer", "transform": "forge:default-item",
+            "textures": { "layer0": "thaumicscholars:items/cluster_emerald" }
+        }
+    }
+}

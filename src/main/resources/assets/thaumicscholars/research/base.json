@@ -1,0 +1,19 @@
+{
+  "entries" :[
+    {
+      "key": "UNLOCKSCHOLARS",
+      "name": "research.UNLOCKSCHOLARS.title",
+      "icons": [ "thaumicscholars:ad_elemental_pickaxe_beta" ],
+      "category": "THAUMICSCHOLARS", "location": [ 0,0 ],
+      "stages": [
+        {
+          "text": "research.UNLOCKSCHOLARS.stage.1"
+        }
+      ]
+    }
+
+
+  ]
+}
+
+

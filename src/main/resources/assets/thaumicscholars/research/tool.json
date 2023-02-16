@@ -1,0 +1,29 @@
+{
+  "entries" :[
+    {
+      "key": "ADELEMENTALTOOLS",
+      "name": "research.ADELEMENTALTOOLS.title",
+      "icons": [ "thaumicscholars:ad_elemental_pickaxe_beta" ],
+      "category": "THAUMICSCHOLARS", "location": [ -1,0 ],
+      "parents": [ "ELEMENTALTOOLS","UNLOCKSCHOLARS" ],
+      "stages": [
+        {
+          "text": "research.ADELEMENTALTOOLS.stage.1",
+          "required_knowledge":["THEORY;AUROMANCY;1","THEORY;ALCHEMY;1","THEORY;INFUSION;1"],
+          "required_item":[
+            "thaumcraft:crystal_essence;4;0;{Aspects:[{amount:1,key:'ignis'}]}",
+            "thaumcraft:crystal_essence;4;0;{Aspects:[{amount:1,key:'ordo'}]}"
+          ]
+        },
+        {
+          "text": "research.ADELEMENTALTOOLS.stage.2",
+          "recipes": ["thaumicscholars:AdElementalPickaxeBeta"]
+        }
+      ]
+    }
+
+
+  ]
+}
+
+

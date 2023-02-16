@@ -1,1 +1,19 @@
-item.thaumicscholars.adElementalPickaxe.name=Pickaxe of the Core - Echo
+#ITEMS
+item.thaumicscholars.adElementalPickaxeAlpha.name=Pickaxe of the Core - Echo
+item.thaumicscholars.adElementalPickaxeBeta.name=Pickaxe of the Core - Purification
+item.cluster.coal.name=Native Coal Cluster
+item.cluster.lapis.name=Native Lapis Lazuli Cluster
+item.cluster.redstone.name=Native Redstone Cluster
+item.cluster.diamond.name=Native Diamond Cluster
+item.cluster.emerald.name=Native Emerald Cluster
+item.cluster.amber.name=Native Amber Cluster
+
+#RESEARCH
+tc.research_category.THAUMICSCHOLARS=Thaumic Scholars
+
+research.UNLOCKSCHOLARS.title=Thaumic Scholars
+research.UNLOCKSCHOLARS.stage.1=
+
+research.ADELEMENTALTOOLS.title=Purification of The Refining
+research.ADELEMENTALTOOLS.stage.1=I was satisfied with the extra minerals that come with the Pickaxe of the Core, but only for ores that need to be smelted in the first place. There is only one exception among those native ore clusters, that is the quartz crystal native to the hell of fire. The blazing environment seems to resonate with the pickaxe to help the ore to turn into a cluster. Even in the Overworld, its orderly crystal lattice will work well with this process. These two basic aspects may be the key to the magical function of refining.
+research.ADELEMENTALTOOLS.stage.2=Based on my research on these two basic vis crystals, I came up with a way to enhance the refining function of the Pickaxe of the Core. The enhanced Pickaxe of the Core will not only be certain to produce native clusters, but can also refine those otherwise fragile minerals to produce corresponding native clusters.However the burning temperature causes its sounding function to be disabled, so next I need to do some research around this.<BR>Look at those colorful adorable tiny things! Seems that finally the infurnal furnace has something fresh to eat.Although these crystal-like minerals are too delicate to form any extra production.
