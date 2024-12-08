@@ -1,19 +1,38 @@
-#ITEMS
+#ITEM
+itemGroup.thaumicscholars=神秘学者
 item.thaumicscholars.adElementalPickaxeAlpha.name=炽心镐-回声
 item.thaumicscholars.adElementalPickaxeBeta.name=炽心镐-提纯
+item.thaumicscholars.adElementalAxeAlpha.name=奔流斧-漩涡
+item.thaumicscholars.adElementalAxeBeta.name=奔流斧-湍流
+item.thaumicscholars.adElementalShovelAlpha.name=后土铲-开山
+item.thaumicscholars.adElementalShovelBeta.name=后土铲-土行
+item.thaumicscholars.adElementalHoeAlpha.name=句芒锄-沃土
+item.thaumicscholars.adElementalHoeBeta.name=句芒锄-繁茂
+
 item.cluster.coal.name=煤原矿簇
 item.cluster.lapis.name=青金石原矿簇
 item.cluster.redstone.name=红石原矿簇
 item.cluster.diamond.name=钻石原矿簇
 item.cluster.emerald.name=绿宝石原矿簇
 item.cluster.amber.name=琥珀原矿簇
+item.thaumicscholars.focuscreative.name=空白创造核心
+
+#ENTITY
+entity.Thaumicscholars.SpellGolem=半活傀儡
+
+#POTION
+effect.thaumicscholars.turbulence=湍流
 
 #RESEARCH
 tc.research_category.THAUMICSCHOLARS=神秘学者
 
 research.UNLOCKSCHOLARS.title=神秘学者
-research.UNLOCKSCHOLARS.stage.1=在探寻神秘学的过程中，我并非是孤身一人。<BR>我曾遭遇过许多不怀好意的恶徒，或是杀人越货的土匪之流，或是觊觎我卓越学识的那些黑神秘使，而他们的下场就是沦为我法术下的亡魂。不过旅途中也不乏一些可交的朋友，他们各有所长，有的在神秘学上颇有建树，有的潜心钻研机巧结构，有的则对傀儡有着疯狂的执着。。。在他们的帮助与指导下，我有了许多新的研究方向，而其中有些观点是我一个人无论如何也想不到的。哈，我想，有一群志同道合的朋友还是挺好的。
+research.UNLOCKSCHOLARS.stage.1=在探寻神秘学的过程中，我并非是孤身一人。<BR>我曾遭遇过许多不怀好意的恶徒，或是杀人越货的土匪之流，或是觊觎我卓越学识的那些黑神秘使，而他们的下场就是沦为我法术下的亡魂。不过旅途中也不乏一些可交的朋友，他们各有所长，有的在神秘学上颇有建树，有的潜心钻研机巧结构，有的则对傀儡有着疯狂的执着。。。在他们的帮助与指导下，我有了许多新的研究方向，而其中有些观点是我一个人无论如何也想不到的。<BR>哈，我想，有一群志同道合的朋友还是挺好的。
 
-research.ADELEMENTALTOOLS.title=炽心提纯
-research.ADELEMENTALTOOLS.stage.1=我对炽心镐所带来的额外矿产甚是满意，不过这仅限于那些本来就需要熔炼的矿物。在众多原矿簇中只有一个例外，那就是原生于火之炼狱的石英晶体，炽热的环境似乎与炽心镐能够产生共鸣而帮助石英原矿化为矿簇，即使在主世界中它那充满秩序的晶格结构也会对此有所增幅。这其中蕴含的两种要素也许就是炽心镐神奇功能的关键。
-research.ADELEMENTALTOOLS.stage.2=基于对两种元始魔力水晶的研究，我得出了增强炽心镐熔炼功能的方法。增强后的炽心镐不仅能百分之百地产出矿簇，而且它还能对那些原本脆弱的矿物进行提炼而产生对应的原矿簇。然而炽烈的温度使它失去了原有的勘探功能，接下来我应该针对这点展开研究。<BR>看看这些五颜六色的可爱小玩意吧！炼狱熔炉又有好东西吃了。可惜这些晶体脆弱的本质导致炼狱熔炉不会再有额外的小型产出。
+research.ADELEMENTALPICKB.title=炽心提纯
+research.ADELEMENTALPICKB.stage.1=我对炽心镐所带来的额外矿产甚是满意，不过这仅限于那些本来就需要熔炼的矿物。在众多原矿簇中只有一个例外，那就是原生于火之炼狱的石英晶体，炽热的环境似乎与炽心镐能够产生共鸣而帮助石英原矿化为矿簇，即使在主世界中它那充满秩序的晶格结构也会对此有所增幅。这其中蕴含的两种要素也许就是炽心镐神奇功能的关键。
+research.ADELEMENTALPICKB.stage.2=基于对两种元始魔力水晶的研究，我得出了增强炽心镐熔炼功能的方法。增强后的炽心镐不仅能百分之百地产出矿簇，而且它还能对那些原本脆弱的矿物进行提炼而产生对应的原矿簇。然而炽烈的温度使它失去了原有的勘探功能，接下来我应该针对这点展开研究。<BR>看看这些五颜六色的可爱小玩意吧！炼狱熔炉又有好东西吃了。可惜这些晶体脆弱的本质导致炼狱熔炉不会再有额外的小型产出。
+
+research.ADELEMENTALPICKA.title=勘探回声
+research.ADELEMENTALPICKA.stage.1=有了提纯带来的矿物产出，接下来就是要找矿了。虽然炽心镐有着勘探的功能，但是它会损耗大量耐久，而且只持续很短的一段时间。我需要找到一种能让它持续散发勘探声波的结构。
+research.ADELEMENTALPICKA.stage.2=嗯。谐振器与奥术之耳能够完美地操控勘探声波，这样一来只要我把升级后的炽心镐拿在手上它就能一直探测周围的矿物了。与此同时它散发的声波还能够探测到范围内的生物，简直是意外之喜！只是美中不足的是,它精密的结构使它无法承受高温，而失去了出产矿簇的能力。不过这只是小问题，我只要一手拿一个就好了。

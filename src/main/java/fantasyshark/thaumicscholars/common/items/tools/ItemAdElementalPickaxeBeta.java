@@ -2,6 +2,7 @@ package fantasyshark.thaumicscholars.common.items.tools;
 
 import fantasyshark.thaumicscholars.ThaumicScholars;
 import fantasyshark.thaumicscholars.common.items.ItemRegistryHandler;
+import fantasyshark.thaumicscholars.common.items.ItemsTS;
 import net.minecraft.client.renderer.ItemMeshDefinition;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.Entity;
@@ -20,7 +21,7 @@ public class ItemAdElementalPickaxeBeta extends ItemPickaxe implements IThaumcra
 
     public ItemAdElementalPickaxeBeta(ToolMaterial enumtoolmaterial) {
         super(enumtoolmaterial);
-        this.setCreativeTab(ConfigItems.TABTC);
+        this.setCreativeTab(ItemsTS.TABTS);
         this.setRegistryName("ad_elemental_pickaxe_beta");
         this.setUnlocalizedName(ThaumicScholars.MODID + ".adElementalPickaxeBeta");
         ItemRegistryHandler.ITEM_VARIANT_HOLDERS.add(this);
