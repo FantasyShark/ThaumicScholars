@@ -1,10 +1,13 @@
 package fantasyshark.thaumicscholars.common.items;
 
-import fantasyshark.thaumicscholars.common.items.tools.ItemAdElementalPickaxeAlpha;
-import fantasyshark.thaumicscholars.common.items.tools.ItemAdElementalPickaxeBeta;
+import fantasyshark.thaumicscholars.common.blocks.BlockRegistryHandler;
+import fantasyshark.thaumicscholars.common.config.ConfigMaterials;
+import fantasyshark.thaumicscholars.common.items.casters.foci.ItemFocusCreative;
+import fantasyshark.thaumicscholars.common.items.tools.*;
 import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -32,27 +35,30 @@ public class ItemRegistryHandler {
     public static void onRegistry(RegistryEvent.Register<Item> iForgeRegistry) {
 
         IForgeRegistry<Item> registry = iForgeRegistry.getRegistry();
-        registry.register(ItemsTS.elementalpickaxealpha = new ItemAdElementalPickaxeAlpha(ThaumcraftMaterials.TOOLMAT_ELEMENTAL));
-        registry.register(ItemsTS.elementalpickaxebeta = new ItemAdElementalPickaxeBeta(ThaumcraftMaterials.TOOLMAT_ELEMENTAL));
+        registry.register(ItemsTS.focuscreative = new ItemFocusCreative());
+        registry.register(ItemsTS.adelementalpickaxealpha = new ItemAdElementalPickaxeAlpha(ThaumcraftMaterials.TOOLMAT_ELEMENTAL));
+        registry.register(ItemsTS.adelementalpickaxebeta = new ItemAdElementalPickaxeBeta(ThaumcraftMaterials.TOOLMAT_ELEMENTAL));
+        registry.register(ItemsTS.adelementalaxealpha = new ItemAdElementalAxeAlpha(ThaumcraftMaterials.TOOLMAT_ELEMENTAL));
+        registry.register(ItemsTS.adelementalaxebeta = new ItemAdElementalAxeBeta(ThaumcraftMaterials.TOOLMAT_ELEMENTAL));
+        registry.register(ItemsTS.adelementalshovelalpha = new ItemAdElementalShovelAlpha(ConfigMaterials.TOOLMAT_ADELEMENTAL));
+        registry.register(ItemsTS.adelementalshovelbeta = new ItemAdElementalShovelBeta(ThaumcraftMaterials.TOOLMAT_ELEMENTAL));
+        registry.register(ItemsTS.adelementalhoealpha = new ItemAdElementalHoeAlpha(ThaumcraftMaterials.TOOLMAT_ELEMENTAL));
+        registry.register(ItemsTS.adelementalhoebeta = new ItemAdElementalHoeBeta(ThaumcraftMaterials.TOOLMAT_ELEMENTAL));
+
         registry.register(ItemsTS.clusters= new ItemTSBase("cluster", new String[]{"coal", "redstone", "lapis", "diamond", "emerald", "amber"}));
 
+        /*registry.register(ItemsTS.richsoil = new ItemBlock(BlockRegistryHandler.BLOCK_RICH_SOIL));*/
     }
 
     @SubscribeEvent
     @SideOnly(Side.CLIENT)
     public static void onModelRegistry(ModelRegistryEvent event) {
 
-        /*ModelLoader.setCustomModelResourceLocation(AD_ELEMENTAL_PICKAXE_ALPHA,0, new ModelResourceLocation(AD_ELEMENTAL_PICKAXE_ALPHA.getRegistryName(), "inventory"));
-        ModelLoader.setCustomModelResourceLocation(AD_ELEMENTAL_PICKAXE_BETA,0, new ModelResourceLocation(AD_ELEMENTAL_PICKAXE_BETA.getRegistryName(), "inventory"));*/
-
-
-
         Iterator var0 = ITEM_VARIANT_HOLDERS.iterator();
 
         while(var0.hasNext()) {
             IThaumcraftItems itemVariantHolder = (IThaumcraftItems)var0.next();
             initModelAndVariants(itemVariantHolder);
-            System.out.println(66666666);
         }
 
     }
@@ -65,16 +71,14 @@ public class ItemRegistryHandler {
 
             for(i = 0; i < item.getVariantNames().length; ++i) {
                 ModelBakery.registerItemVariants(item.getItem(), new ResourceLocation[]{item.getCustomModelResourceLocation(item.getVariantNames()[i])});
-                System.out.println(11111);
             }
         } else if (item.getItem() == ItemsTC.seals) {
             for(i = 0; i < item.getVariantNames().length; ++i) {
                 ModelLoader.setCustomModelResourceLocation(item.getItem(), item.getVariantMeta()[i], new ModelResourceLocation(item.getItem().getRegistryName() + "_" + item.getVariantNames()[i], (String)null));
-                System.out.println(22222);
             }
         } else if (!item.getItem().getHasSubtypes()) {
             ModelLoader.setCustomModelResourceLocation(item.getItem(), 0, new ModelResourceLocation(item.getItem().getRegistryName(), "inventory"));
-            System.out.println(item.getItem().getRegistryName());
+/*            System.out.println(item.getItem().getRegistryName());*/
         } else {
             for(i = 0; i < item.getVariantNames().length; ++i) {
                 ModelLoader.setCustomModelResourceLocation(item.getItem(), item.getVariantMeta()[i], item.getCustomModelResourceLocation(item.getVariantNames()[i]));

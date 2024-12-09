@@ -1,6 +1,11 @@
-#ITEMS
+#ITEM
+itemGroup.thaumicscholars=神秘学者
 item.thaumicscholars.adElementalPickaxeAlpha.name=Pickaxe of the Core - Echo
 item.thaumicscholars.adElementalPickaxeBeta.name=Pickaxe of the Core - Purification
+item.thaumicscholars.adElementalAxeAlpha.name=奔流斧-漩涡
+item.thaumicscholars.adElementalAxeBeta.name=奔流斧-湍流
+item.thaumicscholars.adElementalShovelAlpha.name=后土铲-开山
+item.thaumicscholars.adElementalShovelBeta.name=后土铲-移位
 item.cluster.coal.name=Native Coal Cluster
 item.cluster.lapis.name=Native Lapis Lazuli Cluster
 item.cluster.redstone.name=Native Redstone Cluster
@@ -12,8 +17,12 @@ item.cluster.amber.name=Native Amber Cluster
 tc.research_category.THAUMICSCHOLARS=Thaumic Scholars
 
 research.UNLOCKSCHOLARS.title=Thaumic Scholars
-research.UNLOCKSCHOLARS.stage.1=
+research.UNLOCKSCHOLARS.stage.1=在探寻神秘学的过程中，我并非是孤身一人。<BR>我曾遭遇过许多不怀好意的恶徒，或是杀人越货的土匪之流，或是觊觎我卓越学识的那些黑神秘使，而他们的下场就是沦为我法术下的亡魂。不过旅途中也不乏一些可交的朋友，他们各有所长，有的在神秘学上颇有建树，有的潜心钻研机巧结构，有的则对傀儡有着疯狂的执着。。。在他们的帮助与指导下，我有了许多新的研究方向，而其中有些观点是我一个人无论如何也想不到的。<BR>哈，我想，有一群志同道合的朋友还是挺好的。
 
-research.ADELEMENTALTOOLS.title=Purification of The Refining
-research.ADELEMENTALTOOLS.stage.1=I was satisfied with the extra minerals that come with the Pickaxe of the Core, but only for ores that need to be smelted in the first place. There is only one exception among those native ore clusters, that is the quartz crystal native to the hell of fire. The blazing environment seems to resonate with the pickaxe to help the ore to turn into a cluster. Even in the Overworld, its orderly crystal lattice will work well with this process. These two basic aspects may be the key to the magical function of refining.
-research.ADELEMENTALTOOLS.stage.2=Based on my research on these two basic vis crystals, I came up with a way to enhance the refining function of the Pickaxe of the Core. The enhanced Pickaxe of the Core will not only be certain to produce native clusters, but can also refine those otherwise fragile minerals to produce corresponding native clusters.However the burning temperature causes its sounding function to be disabled, so next I need to do some research around this.<BR>Look at those colorful adorable tiny things! Seems that finally the infurnal furnace has something fresh to eat.Although these crystal-like minerals are too delicate to form any extra production.
+research.ADELEMENTALPICK.title=Purification of The Refining
+research.ADELEMENTALPICK.stage.1=I was satisfied with the extra minerals that come with the Pickaxe of the Core, but only for ores that need to be smelted in the first place. There is only one exception among those native ore clusters, that is the quartz crystal native to the hell of fire. The blazing environment seems to resonate with the pickaxe to help the ore to turn into a cluster. Even in the Overworld, its orderly crystal lattice will work well with this process. These two basic aspects may be the key to the magical function of refining.
+research.ADELEMENTALPICK.stage.2=Based on my research on these two basic vis crystals, I came up with a way to enhance the refining function of the Pickaxe of the Core. The enhanced Pickaxe of the Core will not only be certain to produce native clusters, but can also refine those otherwise fragile minerals to produce corresponding native clusters.However the burning temperature causes its sounding function to be disabled, so next I need to do some research around this.<BR>Look at those colorful adorable tiny things! Seems that finally the infurnal furnace has something fresh to eat.Although these crystal-like minerals are too delicate to form any extra production.
+
+research.ADELEMENTALPICKA.title=勘探回声
+research.ADELEMENTALPICKA.stage.1=有了提纯带来的矿物产出，接下来就是要找矿了。虽然炽心镐有着勘探的功能，但是它会损耗大量耐久，而且只持续很短的一段时间。我需要找到一种能让它持续散发勘探声波的结构。
+research.ADELEMENTALPICKA.stage.2=嗯。谐振器与奥术之耳能够完美地操控勘探声波，这样一来只要我把升级后的炽心镐拿在手上它就能一直探测周围的矿物了。与此同时它散发的声波还能够探测到范围内的生物，简直是意外之喜！只是美中不足的是,它精密的结构使它无法承受高温，而失去了出产矿簇的能力。不过这只是小问题，e我只要一手拿一个就好了。

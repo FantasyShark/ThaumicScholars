@@ -1,11 +1,11 @@
 package fantasyshark.thaumicscholars;
 
-import fantasyshark.thaumicscholars.Proxy.CommonProxy;
+import fantasyshark.thaumicscholars.common.config.ConfigItems;
+import fantasyshark.thaumicscholars.proxies.CommonProxy;
 import fantasyshark.thaumicscholars.common.config.ConfigResearch;
 import fantasyshark.thaumicscholars.common.config.ModConfig;
 import fantasyshark.thaumicscholars.common.crafting.FurnaceRecipeRegistryHandler;
 import fantasyshark.thaumicscholars.common.crafting.InfusionRecipeRegistryHandler;
-import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -34,6 +34,7 @@ public class ThaumicScholars
         FurnaceRecipeRegistryHandler.register();
         InfusionRecipeRegistryHandler.initializeInfusionRecipes();
         ConfigResearch.init();
+        ConfigItems.init();
 
     }
 

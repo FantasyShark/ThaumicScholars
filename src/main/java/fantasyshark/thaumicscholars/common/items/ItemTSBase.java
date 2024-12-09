@@ -20,7 +20,7 @@ public class ItemTSBase extends Item implements IThaumcraftItems {
 
         this.setRegistryName(name);
         this.setUnlocalizedName(name);
-        this.setCreativeTab(ConfigItems.TABTC);
+        this.setCreativeTab(ItemsTS.TABTS);
         this.setNoRepair();
         this.setHasSubtypes(variants.length > 1);
         this.BASE_NAME = name;
@@ -47,7 +47,7 @@ public class ItemTSBase extends Item implements IThaumcraftItems {
 
     public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
 
-        if (tab == ConfigItems.TABTC || tab == CreativeTabs.SEARCH) {
+        if (tab == ItemsTS.TABTS || tab == CreativeTabs.SEARCH) {
             if (!this.getHasSubtypes()) {
                 super.getSubItems(tab, items);
             } else {

@@ -1,14 +1,14 @@
 {
   "entries" :[
     {
-      "key": "ADELEMENTALTOOLS",
-      "name": "research.ADELEMENTALTOOLS.title",
+      "key": "ADELEMENTALPICKB",
+      "name": "research.ADELEMENTALPICKB.title",
       "icons": [ "thaumicscholars:ad_elemental_pickaxe_beta" ],
-      "category": "THAUMICSCHOLARS", "location": [ -1,0 ],
+      "category": "THAUMICSCHOLARS", "location": [ -2,0 ],
       "parents": [ "ELEMENTALTOOLS","UNLOCKSCHOLARS" ],
       "stages": [
         {
-          "text": "research.ADELEMENTALTOOLS.stage.1",
+          "text": "research.ADELEMENTALPICKB.stage.1",
           "required_knowledge":["THEORY;AUROMANCY;1","THEORY;ALCHEMY;1","THEORY;INFUSION;1"],
           "required_item":[
             "thaumcraft:crystal_essence;4;0;{Aspects:[{amount:1,key:'ignis'}]}",
@@ -16,8 +16,29 @@
           ]
         },
         {
-          "text": "research.ADELEMENTALTOOLS.stage.2",
+          "text": "research.ADELEMENTALPICKB.stage.2",
           "recipes": ["thaumicscholars:AdElementalPickaxeBeta"]
+        }
+      ]
+    },
+    {
+      "key": "ADELEMENTALPICKA",
+      "name": "research.ADELEMENTALPICKA.title",
+      "icons": [ "thaumicscholars:ad_elemental_pickaxe_alpha" ],
+      "category": "THAUMICSCHOLARS", "location": [ -4,0 ],
+      "parents": [ "ADELEMENTALPICKB" ],
+      "stages": [
+        {
+          "text": "research.ADELEMENTALPICKA.stage.1",
+          "required_knowledge":["THEORY;AUROMANCY;1","THEORY;ARTIFICE;1","THEORY;INFUSION;1"],
+          "required_item":[
+            "thaumcraft:morphic_resonator",
+            "thaumcraft:arcane_ear"
+          ]
+        },
+        {
+          "text": "research.ADELEMENTALPICKA.stage.2",
+          "recipes": ["thaumicscholars:AdElementalPickaxeAlpha"]
         }
       ]
     }

@@ -1,38 +1,31 @@
 package fantasyshark.thaumicscholars.common.items.tools;
 
+import com.google.common.collect.ImmutableSet;
 import fantasyshark.thaumicscholars.ThaumicScholars;
 import fantasyshark.thaumicscholars.common.items.ItemRegistryHandler;
 import fantasyshark.thaumicscholars.common.items.ItemsTS;
+import net.minecraft.block.Block;
 import net.minecraft.client.renderer.ItemMeshDefinition;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.EnumRarity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemPickaxe;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.*;
+import net.minecraft.util.EnumFacing;
 import thaumcraft.api.items.ItemsTC;
-import thaumcraft.common.config.ConfigItems;
 import thaumcraft.common.items.IThaumcraftItems;
 
-//直接继承炽心镐会有RegistryName重复的问题
-public class ItemAdElementalPickaxeAlpha extends ItemPickaxe implements IThaumcraftItems {
+import java.util.Set;
 
-    public ItemAdElementalPickaxeAlpha(ToolMaterial enumtoolmaterial) {
+public class ItemAdElementalShovelBeta extends ItemSpade implements IThaumcraftItems {
+    private static final Block[] isEffective;
+    EnumFacing side;
+
+    public ItemAdElementalShovelBeta(ToolMaterial enumtoolmaterial) {
         super(enumtoolmaterial);
         this.setCreativeTab(ItemsTS.TABTS);
-        this.setRegistryName("ad_elemental_pickaxe_alpha");
-        this.setUnlocalizedName(ThaumicScholars.MODID + ".adElementalPickaxeAlpha");
+        this.side = EnumFacing.DOWN;
+        this.setRegistryName("ad_elemental_shovel_beta");
+        this.setUnlocalizedName(ThaumicScholars.MODID + ".adElementalShovelBeta");
         ItemRegistryHandler.ITEM_VARIANT_HOLDERS.add(this);
-    }
-
-    public boolean onLeftClickEntity(ItemStack stack, EntityPlayer player, Entity entity) {
-        if (!player.world.isRemote && (!(entity instanceof EntityPlayer) || FMLCommonHandler.instance().getMinecraftServerInstance().isPVPEnabled())) {
-            entity.setFire(2);
-        }
-
-        return super.onLeftClickEntity(stack, player, entity);
     }
 
     public Item getItem() {
@@ -55,11 +48,19 @@ public class ItemAdElementalPickaxeAlpha extends ItemPickaxe implements IThaumcr
         return new ModelResourceLocation("thaumicscholars:" + variant);
     }
 
+    public Set<String> getToolClasses(ItemStack stack) {
+        return ImmutableSet.of("shovel");
+    }
+
     public EnumRarity getRarity(ItemStack itemstack) {
         return EnumRarity.RARE;
     }
 
     public boolean getIsRepairable(ItemStack stack1, ItemStack stack2) {
         return stack2.isItemEqual(new ItemStack(ItemsTC.ingots, 1, 0)) ? true : super.getIsRepairable(stack1, stack2);
+    }
+
+    static {
+        isEffective = new Block[]{Blocks.GRASS, Blocks.DIRT, Blocks.SAND, Blocks.GRAVEL, Blocks.SNOW_LAYER, Blocks.SNOW, Blocks.CLAY, Blocks.FARMLAND, Blocks.SOUL_SAND, Blocks.MYCELIUM};
     }
 }
